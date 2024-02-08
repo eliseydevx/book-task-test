@@ -1,7 +1,7 @@
 # Тестовое задание
 
-## Деплой находится по адресу:
-<https://eliseydevx.github.io/book-task-test/>
+## Деплой находится по адресу: <https://eliseydevx.github.io/book-task-test/>
+
 
 ## Необходимо разработать React-приложение поиска книг с помощью Google Books API. Документация: https://developers.google.com/books/docs/v1/using. Для авторизации запросов к API выбрать способ с предоставлением API key (https://developers.google.com/books/docs/v1/using#APIKey).
 ## Стек: 
