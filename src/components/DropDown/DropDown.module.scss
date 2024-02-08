@@ -1,0 +1,80 @@
+.dropdown {
+  width: 260px;
+  color: #000;
+  position: relative;
+  /* margin-right: 16px; */
+  user-select: none;
+
+  &_title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 15px;
+    color: #807f82;
+    margin: 0 0 12px 0;
+    text-align: center;
+  }
+
+  &_btn {
+    padding: 14px 12px;
+    background: #fff;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    border: 1px solid #cdcdcd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &.open {
+      // Add styles for open state if needed
+    }
+  }
+
+  &_content {
+    position: absolute;
+    top: 90%;
+    background: #fff;
+    border-radius: 0 0 8px 8px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    width: 259px;
+    border: 1px solid #cdcdcd;
+    border-top: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+
+    &.open {
+      // Add styles for open state if needed
+    }
+  }
+
+  &_item {
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+      background: #e6e6e6;
+
+      &:last-child {
+        border-radius: 0 0 8px 8px;
+      }
+    }
+  }
+
+  &_chevron {
+    // transform: rotate(180deg);
+
+    &-rotate {
+      transition: transform 0.3s ease;
+    }
+
+    .open &-rotate {
+      transform: rotate(180deg);
+    }
+  }
+}
